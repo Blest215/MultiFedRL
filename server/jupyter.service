@@ -1,0 +1,13 @@
+[Unit]
+Description=Jupyter server
+After=network.service
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/miniconda3/envs/tf/bin/jupyter server
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/
+
+[Install]
+WantedBy=multi-user.target
