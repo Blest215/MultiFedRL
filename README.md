@@ -1,12 +1,11 @@
-# MultiFedRL: Efficient and Specialized Training for Service Agents in Heterogeneous Web of Things Environments
+# MultiFedRL: Efficient Training of Service Agents for Heterogeneous Internet of Things Environments
 
-The Web of Things (WoT) has gained more attention for enhancing users' daily lives, providing various services using distributed devices that sense and actuate physical environments.
-To adapt services to diverse environments, autonomous agents that provide services may actively learn from user interactions.
-In this process, the agents suffer from sparse user feedback and variant environments, resulting in limited and heterogeneous data.
-Using cluster-based federated learning and further fine-tuning, the agents can collaboratively share learned knowledge and specialize to each environment without revealing private data.
-However, conventional cluster-based federated learning cannot deal with two distinct dimensions of clusters in WoT: environment and service. 
-Moreover, the agents require effective communication to share dynamic environmental contexts.
-In this work, we propose MultiFedRL: the multi-dimension and multi-agent federated reinforcement learning for efficient and asynchronous training of service agents in WoT environments.
-First, MultiFedRL deals with multiple dimensions of clusters through a parallel and modular architecture of neural networks to independently share each partition.
-Second, MultiFedRL uses a learnable communication protocol of the agents to summarize and interpret physical contexts consisting of environment-specific characteristics and actuation states of services.
-Experimental results in simulations show that MultiFedRL outperforms other state-of-the-art cluster-based federated learning in terms of collected rewards and training speed.
+The Internet of Things (IoT) has gained more attention for enhancing users' daily lives in public spaces by providing services using shareable devices.
+However, uncertain factors and other services in the environment may affect the service severely, resulting in users' low satisfaction.
+Based on multi-agent reinforcement learning and cluster-based federated learning, autonomous service agents may learn the complex influence of the factors from user feedback without sophisticated modeling and detection processes.
+However, conventional approaches are limited in dealing with multiple clustering dimensions of service agents and dynamic environmental contexts affecting the agents.
+In this work, we propose _MultiFedRL: the multi-dimension and multi-agent federated reinforcement learning_ for efficient training of service agents in public IoT environments.
+First, we suggest a parallel structure of neural networks for multiple clustering dimensions to share parameters independently, solving the limitation of conventional cluster-based federated learning.
+Second, we suggest an environment-centric learnable communication protocol for the agents to summarize and interpret physical contexts consisting of static characteristics and dynamic states.
+To evaluate MultiFedRL, we developed a simulation framework for IoT services provided to mobile users in public spaces, imitating the user-service interaction based on crucial physics phenomena.
+Experimental results show that MultiFedRL increases user satisfaction by 82.9\% and training efficiency by 24.5\% compared to state-of-the-art cluster-based federated learning.
